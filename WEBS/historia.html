@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <a href="#" class="logo" class="parte-superior">INCA ROUTE</a>
+        <!--<a href="login.html" class="registrarse" class="parte-superior-derecha">LOGIN</a>-->
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="../index.html"class="link">Inicio</a></li>
+                <li><a href="aventuras.html"class="link">Actividades populares</a></li>
+            <li><a href="historia.html"class="link">Acerca de Puno</a></li>
+            <li><a href="Provincias.html"class="link">Atractivos tuísticos</a></li>
+            <li><a href="lugares.html"class="link">Puntos de Interés</a></li>
+            <li><a href="soporte.html"class="link">Soporte</a></li>
+            <li><a href="login.html"class="link"> Login</a></li>
+            </ul>
+        </div>
+        <img src="../IMG/menu.png" alt="menu" class="menu">
+        
+    </nav>
+
+    <div class="pag-historia"><h1 class="entrada">HISTORIA</h1></div>
+
+    <header class="historia"></header>
+
+
+    <main class="historia-main">
+        <section id="section-historia">
+          <h2>Historia de Puno</h2>
+          <p>Puno es una región ubicada en el sur del Perú, en la meseta del Collao, a una altitud de más de 3,800 metros sobre el nivel del mar. Fue habitada originalmente por diversos grupos étnicos, como los aymaras y los quechuas, y luego fue colonizada por los españoles en el siglo XVI. Durante la época colonial, Puno fue un importante centro minero y agrícola, y también se convirtió en un punto de paso importante para las caravanas de comercio entre el Perú y Bolivia.</p>
+            <img src="../IMG/candelaria2.jpg" alt="">
+        </section>
+      
+        <section id="section-historia">
+          <h2>Gastronomía de Puno</h2>
+          <p>La gastronomía de Puno se caracteriza por su variedad y riqueza de sabores, con influencias tanto de la cultura andina como de la española. Uno de los platos más populares de la región es el caldo de cabeza de carnero, un caldo espeso hecho con cabeza de carnero, papas y ajíes. Otros platos típicos incluyen el chairo, un guiso hecho con carnes y papas, y el chuño colado, una sopa espesa hecha con papas deshidratadas. También son populares los postres como la leche asada y el arroz con leche.</p>
+          <img src="../IMG/candelaria2.jpg" alt="">
+        </section>
+      
+        <section id="section-historia">
+          <h2>Cultura de Puno</h2>
+          <p>La cultura de Puno es muy rica y diversa, y se puede ver reflejada en sus festividades, música y danzas. Una de las festividades más importantes de la región es la Fiesta de la Candelaria, que se celebra en febrero y reúne a miles de personas de todo el Perú y de otros países. Durante la fiesta, se realizan desfiles y danzas folklóricas, y se llevan a cabo competencias de bandas de música.</p>
+          <img src="../IMG/candelaria2.jpg" alt="">
+        </section>
+      </main>
+
+    
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu");
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+
+    window.onscroll = () => {
+  if (this.scrollY > 20) {
+    navbar.classList.add("sticky");
+    menu.classList.add("mostrar");
+    navLinks.classList.add("mostrar-nav");
+  } else {
+    navbar.classList.remove("sticky");
+    menu.classList.remove("mostrar");
+    navLinks.classList.remove("mostrar-nav");
+  }
+}
+</script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar" >
+        <a href="#" class="logo" class="parte-superior">INCA ROUTE</a>
+<!--        <a href="WEBS/login.html" class="registrarse" class="parte-superior-derecha">LOGIN</a>
+-->
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html"class="link">Inicio</a></li>
+                <li><a href="WEBS/aventuras.html"class="link">Actividades populares</a></li>
+                <li><a href="WEBS/historia.html"class="link">Acerca de Puno</a></li>
+                <li><a href="WEBS/Provincias.html"class="link">Atractivos tuísticos</a></li>
+                <li><a href="WEBS/lugares.html"class="link">Puntos de Interés</a></li>
+                <li><a href="WEBS/soporte.html"class="link">Soporte</a></li>
+                <li><a href="WEBS/login.html"class="link"> Login</a></li>
+            </ul>
+        </div>
+        <img src="IMG/menu.png" alt="menu" class="menu">
+        
+    </nav>
+
+
+
+
+    <div class="pag-principal"><h1 class="entrada">"EXPLORA UN MUNDO DE SORPRESAS Y ENCANTOS EN LAS ALTURAS DEL SUR PERUANO"</h1></div>
+
+    <header class="inicio"> 
+        
+    </header>
+
+
+   <!-- <a href="#" class="link">Mi enlace</a>
+        <nav class="menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        -->
+    
+
+    
+    <!--
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login">
+				<form class="form">
+					<label for="chk" aria-hidden="true">Log in</label>
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Log in</button>
+				</form>
+			</div>
+
+      <div class="register">
+				<form class="form">
+					<label for="chk" aria-hidden="true">Register</label>
+					<input class="input" type="text" name="txt" placeholder="Username" required="">
+					<input class="input" type="email" name="email" placeholder="Email" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="">
+					<button>Register</button>
+				</form>
+			</div>
+	</div>
+    -->
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu");
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+
+    window.onscroll = () => {
+  if (this.scrollY > 20) {
+    navbar.classList.add("sticky");
+    menu.classList.add("mostrar");
+    navLinks.classList.add("mostrar-nav");
+  } else {
+    navbar.classList.remove("sticky");
+    menu.classList.remove("mostrar");
+    navLinks.classList.remove("mostrar-nav");
+  }
+}
+</script>
+</html>

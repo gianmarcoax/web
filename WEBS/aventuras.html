@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <nav class="navbar" >
+        <a href="#" class="logo" class="parte-superior">INCA ROUTE</a>
+        <!--<a href="login.html" class="registrarse" class="parte-superior-derecha">LOGIN</a>-->
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="../index.html"class="link">Inicio</a></li>
+                <li><a href="aventuras.html"class="link">Actividades populares</a></li>
+                <li><a href="historia.html"class="link">Acerca de Puno</a></li>
+                <li><a href="Provincias.html"class="link">Atractivos tuísticos</a></li>
+                <li><a href="lugares.html"class="link">Puntos de Interés</a></li>
+                <li><a href="soporte.html"class="link">Soporte</a></li>
+                <li><a href="login.html"class="link"> Login</a></li>
+            </ul>
+        </div>
+        <img src="../IMG/menu.png" alt="menu" class="menu">
+        
+    </nav>
+
+    <div class="pag-aventura"><h1 class="entrada">EXPLORA TUS LÍMITES Y DESCUBRE NUEVOS HORIZONTES</h1></div>
+
+    <header class="aventura">
+        
+    </header>
+
+    <main class="main-aventura">
+        <section class="section-aventura">
+          <h2>Actividades populares en Puno</h2>
+          <p>La región de Puno es conocida por sus impresionantes paisajes naturales, lagos, montañas y por su rica cultura. A continuación, te presentamos algunas de las actividades más populares que puedes hacer en esta región:</p>
+          
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Kayak en el lago Titicaca</h3>
+            <p>El lago Titicaca es el lago navegable más alto del mundo y es uno de los atractivos más populares de la región. Una de las formas más emocionantes de explorar el lago es en kayak, puedes recorrer la costa y admirar los paisajes desde otra perspectiva.</p>
+          </div>
+      
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Caminata en la montaña</h3>
+            <p>La región de Puno cuenta con impresionantes paisajes montañosos, ideales para los amantes del trekking y el senderismo. Puedes realizar caminatas de diferentes niveles de dificultad, desde caminatas cortas hasta largas expediciones de varios días.</p>
+          </div>
+      
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Visita a las islas flotantes de Uros</h3>
+            <p>Las islas flotantes de Uros son un conjunto de islas artificiales construidas por los Uros, una comunidad indígena que vive en el lago Titicaca. Estas islas están hechas de totora, una planta acuática, y son un ejemplo único de ingeniería y creatividad.</p>
+          </div>
+
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Exploración del lago Titicaca</h3>
+            <p>El lago Titicaca es uno de los principales atractivos turísticos de Puno, y explorarlo es una actividad imperdible. Se pueden visitar las islas flotantes de los Uros, que están construidas con totora, una planta acuática que crece en el lago. También se pueden visitar las islas Amantaní y Taquile, que tienen comunidades indígenas que mantienen sus costumbres ancestrales.</p>
+            <a href="#">Ver más</a>
+          </div>
+          
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Trekking en los Andes</h3>
+            <p>La región de Puno cuenta con impresionantes paisajes montañosos, ideales para los amantes del trekking y el senderismo. Hay distintas rutas que se pueden recorrer, como la ruta del Qhapaq Ñan, que era una red de caminos construida por los Incas. También se pueden hacer caminatas por la cordillera de los Andes, que ofrece vistas espectaculares de los valles y lagunas de la región.</p>
+            <a href="#">Ver más</a>
+          </div>
+          
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Gastronomía local</h3>
+            <p>La gastronomía de Puno es muy variada y tiene influencias de la cultura andina y española. Uno de los platos más populares es el chuño colado, que es una sopa hecha con papas deshidratadas. También se pueden probar platos a base de quinua, como el risotto de quinua o la sopa de quinua. Otra delicia local es el picante de cuy, que es un guiso hecho con carne de conejillo de indias.</p>
+            <a href="#">Ver más</a>
+          </div>
+          
+          <div class="actividad">
+            <img src="../IMG/banner.jpg" alt="">
+            <h3>Festival de la Candelaria</h3>
+            <p>El festival de la Candelaria es una de las festividades más importantes de Puno y se celebra en febrero de cada año. Durante el festival, se realizan danzas folclóricas y se llevan a cabo procesiones en honor a la Virgen de la Candelaria. También se realizan competencias de bandas y se pueden probar distintos platillos típicos de la región.</p>
+            <a href="#">Ver más</a>
+          </div>
+    </main>      
+
+    <footer>
+
+    </footer>
+
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu");
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+
+    window.onscroll = () => {
+  if (this.scrollY > 20) {
+    navbar.classList.add("sticky");
+    menu.classList.add("mostrar");
+    navLinks.classList.add("mostrar-nav");
+  } else {
+    navbar.classList.remove("sticky");
+    menu.classList.remove("mostrar");
+    navLinks.classList.remove("mostrar-nav");
+  }
+}
+</script>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="body-lugares">
+    <nav class="navbar" >
+        <a href="#" class="logo" class="parte-superior">INCA ROUTE</a>
+        <!--<a href="login.html" class="registrarse" class="parte-superior-derecha">LOGIN</a>-->
+        <div class="nav-links">
+          <ul>
+            <li class="active"><a href="../index.html"class="link">Inicio</a></li>
+            <li><a href="aventuras.html"class="link">Actividades populares</a></li>
+            <li><a href="historia.html"class="link">Acerca de Puno</a></li>
+            <li><a href="Provincias.html"class="link">Atractivos tuísticos</a></li>
+            <li><a href="lugares.html"class="link">Puntos de Interés</a></li>
+            <li><a href="soporte.html"class="link">Soporte</a></li>
+            <li><a href="login.html"class="link"> Login</a></li>
+        </ul>
+        </div>
+        <img src="../IMG/menu.png" alt="menu" class="menu">
+        
+    </nav>
+
+    <header class="lugares"></header>
+
+    <ul class="pag-soporte">
+        <li>
+          <div class="soporte-box">
+            <img src="../IMG/soporte-linea.png" alt="Servicio en Línea" class="imagen-soporte">
+            <div class="soporte-centrado">
+                <h2>Servicio en Línea</h2>
+                <p>Solucione sus problemas rápidamente a través de nuestros chats en vivo</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="soporte-box">
+            <img src="../IMG/soporte-llamda.jpg" alt="Soporte por Teléfono" class="imagen-soporte">
+            <div class="soporte-centrado">
+                <h2>Soporte por Teléfono</h2>
+            <p>hable con un representante de soporte dedicado para solucionar sus problemas por teléfono</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="soporte-box">
+            <img src="../IMG/soporte-correo.png" alt="Soporte por Correo electrónico" class="imagen-soporte">
+            <div class="soporte-centrado">
+                <h2>Soporte por Correo electrónico</h2>
+                <p>Envíe un correo electrónico a nuestro equipo de soporte para una inmediata solución</p>
+            </div>
+          </div>
+        </li>
+        <li>
+            <div class="soporte-box">
+              <img src="../IMG/soporte-llamda.jpg" alt="Soporte por Teléfono" class="imagen-soporte">
+              <div class="soporte-centrado">
+                  <h2>Soporte por Teléfono</h2>
+              <p>hable con un representante de soporte dedicado para solucionar sus problemas por teléfono</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="soporte-box">
+              <img src="../IMG/soporte-correo.png" alt="Soporte por Correo electrónico" class="imagen-soporte">
+              <div class="soporte-centrado">
+                  <h2>Soporte por Correo electrónico</h2>
+                  <p>Envíe un correo electrónico a nuestro equipo de soporte para una inmediata solución</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="soporte-box">
+              <img src="../IMG/soporte-llamda.jpg" alt="Soporte por Teléfono" class="imagen-soporte">
+              <div class="soporte-centrado">
+                  <h2>Soporte por Teléfono</h2>
+              <p>hable con un representante de soporte dedicado para solucionar sus problemas por teléfono</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="soporte-box">
+              <img src="../IMG/soporte-correo.png" alt="Soporte por Correo electrónico" class="imagen-soporte">
+              <div class="soporte-centrado">
+                  <h2>Soporte por Correo electrónico</h2>
+                  <p>Envíe un correo electrónico a nuestro equipo de soporte para una inmediata solución</p>
+              </div>
+            </div>
+          </li>
+      </ul>
+</body>
+
+<script>
+  const menuHamburger = document.querySelector(".menu")
+  const navLinks = document.querySelector(".nav-links")
+
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu");
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+
+  window.onscroll = () => {
+if (this.scrollY > 20) {
+  navbar.classList.add("sticky");
+  menu.classList.add("mostrar");
+  navLinks.classList.add("mostrar-nav");
+} else {
+  navbar.classList.remove("sticky");
+  menu.classList.remove("mostrar");
+  navLinks.classList.remove("mostrar-nav");
+}
+}
+</script>
+</html>
